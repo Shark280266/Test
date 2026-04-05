@@ -166,12 +166,15 @@ h1 {
     }
 }
 /* FIX: Move "more..." below heading in mobile landscape */
-.section-title {
-    display: block;
-}
+@media (max-width: 768px) {
 
-.section-title a {
-    display: block;
-    text-align: right;
-    margin-top: 3px;
+    .section-title {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-title a {
+        align-self: flex-end;
+        margin-top: 2px;
+    }
 }
