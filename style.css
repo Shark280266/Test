@@ -1,0 +1,167 @@
+/* GLOBAL TYPOGRAPHY BASELINE */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #e6e6e6;
+}
+
+/* Main Name */
+h1 {
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* Tagline */
+.tagline {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Card / Item Titles */
+.item-title,
+.card h3 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* Body Text */
+.item-desc,
+.narrative,
+.compact-list li,
+.extra-points li {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+}
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #0b2233, #050d14);
+    color: #e6e6e6;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    padding: 25px 12px 10px 12px;
+}
+
+.header {
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin: 0;
+}
+
+.tagline {
+    text-align: center;
+    color: #d4af37;
+    margin: 0;
+}
+
+.profile-pic {
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Floating Home link (if used) */
+.home-link {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    color: #4da3ff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    z-index: 9999;
+}
+
+/* Back to Main */
+.back-to-main {
+    margin-top: 30px;
+    text-align: right;
+}
+
+.back-to-main a {
+    color: #4da3ff;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.back-to-main a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile: hide profile pic everywhere */
+@media (max-width: 768px) {
+    .profile-pic {
+        display: none !important;
+    }
+}
+
+/* Desktop: hide where explicitly applied */
+.desktop-hide {
+    display: none !important;
+}
+
+.compact-list li {
+    color: #cfcfcf;
+}
+
+.engage-icons {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 12px;
+}
+
+.engage-icons a {
+    text-decoration: none !important;
+}
+
+.engage-icons a:hover {
+    text-decoration: none !important;
+}
+
+.engage-icons a i {
+    width: 20px;          /* keeps all icons aligned vertically */
+    text-align: center;
+    font-size: 18px;
+}
+
+.engage-icons a span {
+    color: #ffffff;
+    font-size: 13px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .profile-pic {
+        display: none !important;
+    }
+}
