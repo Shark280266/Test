@@ -165,3 +165,13 @@ h1 {
         display: none !important;
     }
 }
+/* FIX: Move "more..." below heading in mobile landscape */
+.section-title {
+    display: block;
+}
+
+.section-title a {
+    display: block;
+    text-align: right;
+    margin-top: 3px;
+}
