@@ -1,58 +1,32 @@
-/* GLOBAL TYPOGRAPHY BASELINE */
+/* =============================================
+   SHARAD KUMAR PORTFOLIO — GLOBAL STYLESHEET
+   ============================================= */
 
-body {
-    font-family: 'Segoe UI', sans-serif;
-    font-weight: 400;
-    line-height: 1.4;
-    color: #e6e6e6;
-}
 
-/* Main Name */
-h1 {
-    font-size: 30px;
-    font-weight: 600;
-    letter-spacing: 2px;
-}
+/* ---------------------------------------------
+   1. RESET & BASE
+   --------------------------------------------- */
 
-/* Tagline */
-.tagline {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.3;
-}
-
-/* Section Titles */
-.section-title {
-    font-size: 18px;
-    font-weight: 600;
-}
-
-/* Card / Item Titles */
-.item-title,
-.card h3 {
-    font-size: 14px;
-    font-weight: 600;
-}
-
-/* Body Text */
-.item-desc,
-.narrative,
-.compact-list li,
-.extra-points li {
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 1.4;
-}
 body {
     margin: 0;
     font-family: 'Segoe UI', sans-serif;
-    background: radial-gradient(circle at top, #0b2233, #050d14);
+    font-weight: 400;
+    line-height: 1.4;
     color: #e6e6e6;
-}
-
-body {
+    background: radial-gradient(circle at top, #0b2233, #050d14);
     overflow-x: hidden;
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* ---------------------------------------------
+   2. LAYOUT
+   --------------------------------------------- */
 
 .container {
     max-width: 1400px;
@@ -64,47 +38,73 @@ body {
     position: relative;
 }
 
+
+/* ---------------------------------------------
+   3. TYPOGRAPHY
+   --------------------------------------------- */
+
 h1 {
     text-align: center;
-    letter-spacing: 2px;
     font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 2px;
     margin: 0;
 }
 
 .tagline {
     text-align: center;
+    font-size: 16px;
+    font-weight: 500;
     color: #d4af37;
     margin: 0;
+    line-height: 0.5;
 }
+
+.section-title {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+/* ---------------------------------------------
+   4. PROFILE PHOTO
+   Profile pic: visible on desktop (index.html only).
+   Hidden on tablet and mobile (all orientations).
+   Sub-pages keep the <img> commented out in HTML.
+   --------------------------------------------- */
 
 .profile-pic {
-    position: absolute;
-    right: 0;
-    top: 10px;
-    width: 120px;
-    height: 120px;
+    display: block;
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
     object-fit: cover;
+    border: 2px solid #d4af37;
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.5);
 }
 
-/* Floating Home link (if used) */
+
+/* ---------------------------------------------
+   5. NAVIGATION LINKS
+   --------------------------------------------- */
+
 .home-link {
     position: fixed;
     bottom: 25px;
     right: 25px;
     color: #4da3ff;
     font-size: 14px;
-    text-decoration: none;
     font-weight: 500;
+    text-decoration: none;
     display: flex;
     align-items: center;
     gap: 6px;
     z-index: 9999;
 }
 
-/* Back to Main */
 .back-to-main {
-    margin-top: 30px;
+    margin-top: 0px;
+    margin-bottom: 20px;
     text-align: right;
 }
 
@@ -119,62 +119,123 @@ h1 {
     text-decoration: underline;
 }
 
-/* Mobile: hide profile pic everywhere */
-@media (max-width: 768px) {
-    .profile-pic {
-        display: none !important;
-    }
+.disabled-link {
+    color: #4da3ff;
+    pointer-events: none;
+    opacity: 0.6;
+    cursor: default;
 }
 
-/* Desktop: hide where explicitly applied */
-.desktop-hide {
-    display: none !important;
+
+/* ---------------------------------------------
+   6. CARDS & GRID (sub-pages)
+   --------------------------------------------- */
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 45px 10px;
 }
 
-.compact-list li {
-    color: #cfcfcf;
+.card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(212, 175, 55, 0.5);
+    border-radius: 10px;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100%;
 }
 
-.engage-icons {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 12px;
+.card h3 {
+    color: #d4af37;
+    font-size: 16px;
+    margin: 0;
 }
 
-.engage-icons a {
-    text-decoration: none !important;
+.card ul {
+    padding-left: 18px;
+    margin: 10px 0;
 }
 
-.engage-icons a:hover {
-    text-decoration: none !important;
-}
-
-.engage-icons a i {
-    width: 20px;          /* keeps all icons aligned vertically */
-    text-align: center;
-    font-size: 18px;
-}
-
-.engage-icons a span {
-    color: #ffffff;
+.card ul li {
     font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #cfcfcf;
+    margin-bottom: 6px;
 }
 
-@media (min-width: 769px) and (max-width: 1024px) {
-    .profile-pic {
-        display: none !important;
-    }
+.mandate {
+    font-size: 12px;
+    color: #d4af37;
+    font-style: italic;
+    margin-top: 3px;
+    margin-bottom: 6px;
 }
-/* FIX: Move "more..." below heading in mobile landscape */
-@media (max-width: 768px) {
 
-    .section-title {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .section-title a {
-        align-self: flex-end;
-        margin-top: 2px;
-    }
+.narrative {
+    font-size: 13px;
+    color: #d1d5db;
+    margin-top: 6px;
+    margin-bottom: 12px;
+    min-height: 40px;
 }
+
+.outcome {
+    font-size: 12px;
+    margin-top: auto;
+    padding-top: 10px;
+}
+
+.outcome strong {
+    color: #22c55e;
+}
+
+.extra-points {
+    padding-left: 18px;
+    margin-top: 10px;
+}
+
+.extra-points li {
+    color: #cfcfcf;
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
+.section-block {
+    position: relative;
+    padding-bottom: 0;
+}
+
+/* ---------------------------------------------
+   10. RESPONSIVE — MOBILE & TABLET PORTRAIT/LANDSCAPE
+       Profile pic hidden below 1025px (set in section 4)
+   --------------------------------------------- */
+
+@media (max-width: 1024px) {
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+    .container {
+        padding: 15px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .tagline {
+        text-align: center;
+        font-size: 16px;
+        font-weight: 500;
+        color: #d4af37;
+        margin: 0;
+    }
+    .card {
+        padding: 14px;
+    }
+    .extra-points li {
+        font-size: 12px;
+    }
+ }

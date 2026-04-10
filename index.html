@@ -6,110 +6,55 @@
 <meta property="og:title" content="Sharad Kumar | Enterprise AI, Cloud, Delivery & GTM Strategy Leadership Portfolio" />
 <meta property="og:description" content="Enterprise leader specializing in AI, Cloud, and Digital Transformation. Proven track record in scaling delivery, driving GTM strategy, and building high-performance global teams delivering measurable business outcomes." />
 <meta name="description" content="Enterprise leader specializing in AI, Cloud, and Digital Transformation. Proven track record in scaling delivery, driving GTM strategy, and building high-performance global teams delivering measurable business outcomes." />
-<meta property="og:title" content="Sharad Kumar | Enterprise AI, Cloud, Delivery & GTM Strategy Leadership Portfolio" />
-    <meta property="og:image" content="https://Shark280266.github.io/image.jpg" />
+<meta property="og:image" content="https://Shark280266.github.io/image.jpg" />
 <meta property="og:url" content="https://Shark280266.github.io/" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="Sharad Kumar Portfolio" />
 <meta name="twitter:card" content="summary_large_image" />
-
-<!-- ADD THESE -->
 <meta name="author" content="Sharad Kumar" />
 <meta property="article:published_time" content="2026-03-31T00:00:00Z" />
 <title>Sharad Kumar | AI, Cloud, Delivery & GTM Strategy Leader Portfolio</title>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+
 <style>
-body {
-    margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: radial-gradient(circle at top, #0b2233, #050d14);
-    color: #e6e6e6;
-    overflow-x: hidden;
-}
+/* IMPACT SNAPSHOT — index.html only */
 
-.container {
-    max-width: 1400px;
-    margin: auto;
-    padding: 25px 12px 0px 12px;   /* increase bottom space */
-}
-
-h1 {
-    text-align: center;
-    letter-spacing: 2px;
-    font-size: 30px;
-    margin: 0;
-}
-
-.tagline {
-    text-align: center;
-    color: #d4af37;
-    margin: 0;
-    line-height: .5;
-}
-
-.tagline {
-    white-space: normal;
-    word-break: keep-all;
-}
-
-.intro {
-    text-align: center;
-    max-width: 1100px;
-    margin: 18px auto 10px auto;
-    line-height: 1.2;
-    font-size: 14px;	
-}
-
-/* IMPACT */
 .impact {
-  max-width: 960px;
-  margin: 20px auto;
-  text-align: center;
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
 }
 
 .impact-title {
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
-.impact-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 10px;
-  max-width: 1000px;
-  margin: -10px auto 0 auto;
-}
-
-.impact-grid .box {
-  background-color: #333;
-  padding: 1px;             /* restored original height padding */
-  border-radius: 10px;
-  min-width: 100px;
-  flex: 0 0 160px;           /* fixed width to ensure 5+4 layout */
-  text-align: center;
-  box-shadow: 0 0 8px rgba(0,0,0,0.1);
-  font-size: 12px;
-  color: white;
-}
-
-.impact-grid .box b {
-  color: #d4af37;             /* gold top line */
-  display: block;
-  margin-bottom: 5px;
-  font-size: 18px;            /* slightly larger than description */
+.impact-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 5px;
 }
 
 .box {
+    width: 185px;
+    min-width: 185px;
+    max-width: 185px;
     border: 1px solid #a88c3a;
+    background-color: #333;
+    border-radius: 10px;
     padding: 10px 12px;
-    border-radius: 6px;
-    width: 150px;
     text-align: center;
     font-size: 13px;
     line-height: 1.4;
+    color: white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .box b {
@@ -119,25 +64,93 @@ h1 {
     margin-bottom: 4px;
 }
 
-.box b {
-    color: #d4af37;
+.section-title {
+    border-bottom: 1px solid #d4af37;
+    padding-bottom: 5px;
 }
 
-/* SECTIONS */
+/* Desktop: 5+4 */
+/* Tablet landscape: 5+4 */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+    .impact-grid {
+        max-width: 930px;
+    }
+    .box {
+        flex: 0 0 172px;
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+/* Tablet portrait: 4+4+1 */
+@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+    .impact-grid {
+        max-width: 760px;
+    }
+    .box {
+        flex: 0 0 172px;
+        font-size: 12px;
+        padding: 8px;
+    }
+}
+
+/* Mobile landscape: 4+4+1 */
+@media (max-width: 768px) and (orientation: landscape) {
+    .impact-grid {
+        max-width: 760px;
+    }
+    .box {
+        flex: 0 0 172px;
+        font-size: 11px;
+        padding: 6px;
+    }
+    .box b {
+        font-size: 14px;
+    }
+}
+
+/* Mobile portrait: 2+2 */
+@media (max-width: 768px) and (orientation: portrait) {
+    .impact-grid {
+        max-width: 380px;
+    }
+    .box {
+        flex: 0 0 172px;
+        font-size: 11px;
+        padding: 6px;
+    }
+    .box b {
+        font-size: 14px;
+    }
+}
+
+.more-link {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 12px;
+    color: #4da3ff;
+    text-decoration: none;
+}
+
+.more-link:hover {
+    text-decoration: underline;
+}
+
+.intro {
+    text-align: center;
+    max-width: 1100px;
+    margin: -25px auto 5px auto;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
 .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 28px;
-    margin-top: 5px;
-    padding-top: 15px;
-}
-
-.section-title {
-    font-weight: bold;
-    margin-bottom: 6px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #d4af37;
-    font-size: 14px;
+    margin-top: 0;
+    padding-top: 5px;
 }
 
 .item {
@@ -162,15 +175,17 @@ h1 {
 .item-desc {
     font-size: 13px;
     color: #cfcfcf;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
-/* BOTTOM */
 .bottom {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
-    margin-top: 20px;   /* add spacing from above section */
-    border-top: none;
+    margin-top: -14px;
 }
 
 .compact-list {
@@ -180,13 +195,18 @@ h1 {
 
 .compact-list li {
     display: flex;
+    align-items: flex-start;
     margin-bottom: 8px;
     font-size: 13px;
-    align-items: flex-start;
+    color: #cfcfcf;
+}
+
+.compact-list li span {
+    color: #cfcfcf;
 }
 
 .compact-list i {
-    color: #d4af37;   
+    color: #d4af37;
     margin-right: 8px;
 }
 
@@ -194,243 +214,81 @@ h1 {
     color: #d4af37;
 }
 
-/* ENGAGE */
-/* FORCE FIX - ENGAGE SECTION */
-
 .engage-icons {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 12px !important;
-}
-
-.engage-icons a {
-    display: flex !important;
-    align-items: center !important;
-    gap: 10px !important;
-}
-
-.engage-icons a span {
-    color: #ffffff !important;
-    font-size: 13px !important;
-    opacity: 1 !important;
-    margin-top: 4px;
-}
-
-.engage-icons a i {
-    font-size: 20px;
-}
-
-.disabled {
-    color: #777 !important;
-    pointer-events: none;
-}
-
-.profile-pic {
-  float: right;
-  margin-top: -75px;
-  margin-right: 0;
-  margin-bottom: 10px;
-  margin-left: 20px;
-  position: relative;
-  top: -40px;   /* adjust this instead of large negative margin */
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid #d4af37;
-  box-shadow: 0 0 12px rgba(212,175,55,0.5);
-}
-
-.section-block {
-  position: relative;
-  padding-bottom: 0px;
-}
-
-.more-link {
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-size: 12px;
-  color: #4da3ff;
-  text-decoration: none;
-}
-
-.disabled-link {
-  pointer-events: none;
-  opacity: 0.6;
-}
-
-.more-link:hover {
-  text-decoration: underline;
-}
-
-.disabled-link {
-  color: #4da3ff;
-  pointer-events: none;
-  opacity: 0.6;
-  cursor: default;
-}
-
-
-/* ⬇️ ADD HERE */
-@media (max-width: 768px) {
-.tagline + .intro {
-    margin-top: 12px;
-}
-
-.tagline {
-    font-size: 16px;
-    line-height: 1.3;
-    padding: 0 10px;
-}media
-
-    .header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .profile-pic {
-        margin-top: 10px;
-    }
-
-    .container {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    .section-title {
-        font-size: 18px;
-    }
-
-    .card {
-        padding: 14px;
-    }
-
-    .extra-points li {
-        font-size: 12px;
-    }
-
-.impact-grid .box:last-child {
-    grid-column: 1 / -1;   /* 🔥 span full row */
-    justify-self: center;  /* 🔥 center it */
-    max-width: 160px;      /* keep same box width */
-}
-}
-
-@media (max-width: 768px) and (orientation: portrait) {
-    
-    .grid {
-        grid-template-columns: 1fr;
-    }
-    .header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-.profile-pic {
-    float: none;          /* 🔥 cancels right float */
-    position: static;     /* 🔥 removes upward shift */
-    
-    width: 70px;
-    height: 70px;
-
-    display: none;
-    margin: 0 0 8px 0;    /* top-left placement */
-}
-
-    .container {
-        padding: 15px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    .section-title {
-        font-size: 18px;
-    }
-
-    .card {
-        padding: 14px;
-    }
-
-    .extra-points li {
-        font-size: 12px;
-    }
-.bottom {
-    display: block;
-}
-
-.engage {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     margin-top: 15px;
 }
 
-.impact-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+.engage-icons a {
+    display: flex;
+    align-items: center;
     gap: 10px;
+    text-decoration: none;
 }
 
-.impact-grid .box {
-    flex: unset;        /* override desktop flex */
-    min-width: auto;
-    font-size: 11px;
-    padding: 6px;
-}
-
-.impact-grid .box b {
-    font-size: 14px;
-}
-}
-
-body {
-    overflow-x: hidden;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-
-.engage-icons a,
 .engage-icons a:link,
 .engage-icons a:visited,
 .engage-icons a:hover,
 .engage-icons a:active {
-    text-decoration: none !important;
+    text-decoration: none;
 }
-/* ⬆️ END */
-.compact-list li span {
-    color: #cfcfcf;
-}@media (min-width: 769px) and (orientation: landscape) {
-    .profile-pic {
-        display: none !important;
+
+.engage-icons a i {
+    width: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.engage-icons a span {
+    color: #ffffff;
+    font-size: 13px;
+    opacity: 1;
+    margin-top: 4px;
+}
+
+.disabled {
+    color: #777;
+    pointer-events: none;
+}
+
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+    .bottom {
+        display: block;
+        margin-top: 30px;
+    }
+    .engage {
+        margin-top: 15px;
+    }
+    .tagline + .intro {
+        margin-top: 12px;
     }
 }
 
-@media (max-width: 768px) {
-  .more-link {
-    bottom: 2px;
-  }
-
-  .bottom {
-    margin-top: 30px;
-  }
+.letterhead {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    margin-bottom: 5px;
 }
 
+.header-center {
+    flex: 1;
+    text-align: center;
 }
-@media (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
-  .impact-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
+
+.side-block {
+    width: 110px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 </style>
 </head>
 
@@ -438,63 +296,77 @@ img {
 
 <div class="container">
 
-<h1>SHARAD KUMAR</h1>
-<p class="tagline">Operating at the intersection of Technology, Delivery, and GTM strategy</p>
-
-<p class="intro">
-I partner with enterprise Leaders to Modernize through AI, Cloud and Emerging technologies, Stabilize portfolios; Build and Scale high-performing teams;
-Create winning Go-to-market engines that drive Measurable Growth and Profitable Outcomes.
-</p>
-<img src="image.jpg" alt="Sharad Kumar" class="profile-pic">
+<div class="letterhead">
+    <div class="side-block">
+        <img src="image.jpg" alt="Sharad Kumar" class="profile-pic">
+    </div>
+    <div class="header-center">
+        <h1>SHARAD KUMAR</h1>
+        <p class="tagline">Operating at the intersection of Delivery, technology and GTM strategy</p>
+    </div>
+    <div class="side-block">
+        <svg viewBox="0 0 120 120" width="100" height="100">
+    <defs>
+        <path id="bottom-arc" d="M 15,60 A 45,45 0 0,0 105,60"/>
+    </defs>
+    <image href="logo.png" x="20" y="15" width="80" height="80" style="filter: brightness(2.5) saturate(3) hue-rotate(5deg);"/>
+            <text font-size="11" fill="#d4af37" font-family="Segoe UI, sans-serif" font-weight="500" letter-spacing="2">
+                <textPath href="#bottom-arc">Addicted to Results</textPath>
+            </text>
+        </svg>
+    </div>
+</div>
+<p class="intro">I partner with enterprise leaders to modernize through AI, cloud and emerging technologies, stabilize portfolios; build and scale high-performing teams; <br>create winning go-to-market engines that drive measurable growth and profitable outcomes.</p>
 
 <div class="impact">
 <div class="impact-title">IMPACT SNAPSHOT</div>
-<div class="impact-grid">
-<div class="box"><b>$300 M</b> Enterprise SBU Rebuild</div>
-<div class="box"><b>425+</b> Scaled Delivery Portfolio</div>
-<div class="box"><b>$20 M</b> Practice Incubated</div>
-<div class="box"><b>75%+</b> Hit-to-Win</div>
-<div class="box"><b>6000+</b> Apps Modernized</div>
-<div class="box"><b>9</b> Geographies Developed</div>
-<div class="box"><b>$13 M</b> Portfolio ACV</div>
-<div class="box"><b>Salvaged</b> Solution & Delivery Red-Flags</div>
-<div class="box"><b>$47 M</b> P&amp;L Ownership</div>
+<div class="impact-row">
+    <div class="box"><b>$300 M</b> Enterprise SBU Rebuild</div>
+    <div class="box"><b>425+</b> Scaled Delivery Portfolio</div>
+    <div class="box"><b>$20 M</b> Practice Incubated</div>
+    <div class="box"><b>75%+</b> Hit-to-Win</div>
+    <div class="box"><b>6000+</b> Apps Modernized</div>
+</div>
+<div class="impact-row">
+    <div class="box"><b>9</b> Geographies Developed</div>
+    <div class="box"><b>$13 M</b> Portfolio ACV</div>
+    <div class="box"><b>Salvaged</b> Solution & Delivery Red-Flags</div>
+    <div class="box"><b>$47 M</b> P&amp;L Ownership</div>
 </div>
 </div>
 
 <div class="grid">
 
-<!-- DELIVERY -->
+<!-- GTM -->
 <div class="section-block">
-<div class="section-title">
-    Delivery Leadership
-    <a href="delivery.html">more...</a>
-</div>
-<div class="item"><i class="fa-solid fa-check-circle icon"></i><div><div class="item-title">Agile & Scrum Execution</div><div class="item-desc">Led globally distributed teams with Agile governance, In-Sprint automation and tiered regression strategies to accelerate CI/CD and ensure quality at scale.</div></div></div>
-<div class="item"><i class="fa-solid fa-users icon"></i><div><div class="item-title">Stakeholder Management</div><div class="item-desc">Goverened globally distributed multimillion-dollar by setting up dashboard based reporting and tracking of SLA through Balance score cards proviing overall clarity.</div></div></div>
-<div class="item"><i class="fa-solid fa-shield icon"></i><div><div class="item-title">Quality & Risk Management</div><div class="item-desc">Implemented predictive models for risk & stability scoring, defect prediction, impact-based requirement prioritization improving release stability.</div></div></div>
-<div class="item"><i class="fa-solid fa-globe icon"></i><div><div class="item-title">Global Team Leadership</div><div class="item-desc">Built and scaled Delivery CoEs (federated & non-federated) with 425+ FTE, Established governance, processes and Workforce transformation.</div></div></div>
+<div class="section-title">GTM & GROWTH</div>
+<a href="gtm.html" class="more-link">more...</a>
+<div class="item"><i class="fa-solid fa-magnifying-glass icon"></i><div><div class="item-title">Market & Competitive Intelligence</div><div class="item-desc">Conducted market (Geography & Region) & competitive analysis to determine readiness for propositions postioning.</div></div></div>
+<div class="item"><i class="fa-solid fa-handshake icon"></i><div><div class="item-title">Sales Strategy & Pursuit Leadership</div><div class="item-desc">Led RFI/RFP/RFQ cycles, proposal defence, negotiations and contract structuring, achieving 75%+ hit-to-win ratio and various $1M+ deals.</div></div></div>
+<div class="item"><i class="fa-solid fa-diagram-project icon"></i><div><div class="item-title">Partnerships & Alliances</div><div class="item-desc">Built strategic global & regional alliances, Co-branded olutions including SaaS based platforms in scalable subscription modes with revenue-sharing models. </div></div></div>
+<div class="item"><i class="fa-solid fa-bullhorn icon"></i><div><div class="item-title">Brand Positioning & Growth</div><div class="item-desc">Crafted GTM & JGTM strategies, launched service lines, generated Leads and established thought leadership through forums, analyst briefings etc. </div></div></div>
 </div>
 
 <!-- SOLUTION -->
 <div class="section-block">
 <div class="section-title">SOLUTION ARCHITECTURE</div>
 <a href="solution.html" class="more-link">more...</a>
-<div class="item"><i class="fa-solid fa-cloud icon"></i><div><div class="item-title">Cloud & SaaS Transformation</div><div class="item-desc">Architected & operationalized cloud migration for 6,000+ applications using re-host, re-platform, re-factor, and retire strategies on SaaS platforms.</div></div></div>
-<div class="item"><i class="fa-solid fa-brain icon"></i><div><div class="item-title">AI-Driven Engineering</div><div class="item-desc">Embedded Machine Learning & Predictive modeling into SDLC in a consultative mode enabling intelligent and automated patterns for analysis leading to accuracies </div></div></div>
+<div class="item"><i class="fa-solid fa-cloud icon"></i><div><div class="item-title">Cloud & SaaS Transformation</div><div class="item-desc">Architected & operationalized cloud migration for 6,000+ applications using re-host, re-platform, re-factor and retire strategies on SaaS platforms.</div></div></div>
+<div class="item"><i class="fa-solid fa-brain icon"></i><div><div class="item-title">AI-Driven Engineering</div><div class="item-desc">Embedded consulting led machine learning & predictive modeling into SDLC enabling automated intelligent patterns for analysis leading to accuracies. </div></div></div>
 <div class="item"><i class="fa-solid fa-lock icon"></i><div><div class="item-title">DevOps & Security</div><div class="item-desc">Designed end-to-end CI/CD, Virtualization and Deployment automation solutions improving release velocity and accelerated operational stability resilience.</div></div></div>
 <div class="item"><i class="fa-solid fa-chart-line icon"></i><div><div class="item-title">Data Analytics & Observability</div><div class="item-desc">Established BI-led engineering and observability frameworks to drive smarter decisions, improve performance achieving measurable outcomes.</div></div></div>
 </div>
 
-<!-- GTM -->
+<!-- DELIVERY -->
 <div class="section-block">
-<div class="section-title">GTM & GROWTH</div>
-<a href="gtm.html" class="more-link">more...</a>
-<div class="item"><i class="fa-solid fa-magnifying-glass icon"></i><div><div class="item-title">Market & Competitive Intelligence</div><div class="item-desc">Conducted Market (Geography & Region) & Competitive analysis to determine readiness to position propositions.</div></div></div>
-<div class="item"><i class="fa-solid fa-handshake icon"></i><div><div class="item-title">Sales Strategy & Pursuit Leadership</div><div class="item-desc">Led RFI/RFP/RFQ cycles, proposal defence, negotiations, and contract structuring—achieving 75%+ hit-to-win ratio and multiple $1M+ deals.</div></div></div>
-<div class="item"><i class="fa-solid fa-diagram-project icon"></i><div><div class="item-title">Partnerships & Alliances</div><div class="item-desc">Built strategic global & regional alliances, Co-branded olutions including SaaS based platforms in scalable subscription modes with revenue-sharing models. </div></div></div>
-<div class="item"><i class="fa-solid fa-bullhorn icon"></i><div><div class="item-title">Brand Positioning & Growth</div><div class="item-desc">Crafted GTM & JGTM strategies, Launched service lines, Generated Leads and established thought leadership through forums, analyst briefings etc. </div></div></div>
+<div class="section-title">DELIVERY LEADERSHIP</div>
+<a href="delivery.html" class="more-link">more...</a>
+<div class="item"><i class="fa-solid fa-check-circle icon"></i><div><div class="item-title">Agile & Scrum Execution</div><div class="item-desc">Led globally distributed teams with Agile governance, In-Sprint automation and tiered regression strategies to accelerate CI/CD ensuring predictable quality at scale.</div></div></div>
+<div class="item"><i class="fa-solid fa-users icon"></i><div><div class="item-title">Stakeholder Management</div><div class="item-desc">Goverened globally distributed multimillion-dollar by setting up dashboard based reporting and tracking of SLA through Balance score cards proviing overall clarity.</div></div></div>
+<div class="item"><i class="fa-solid fa-shield icon"></i><div><div class="item-title">Quality & Risk Management</div><div class="item-desc">Implemented predictive models for risk & stability scoring, defect prediction, impact-based requirement prioritization improving release stability.</div></div></div>
+<div class="item"><i class="fa-solid fa-globe icon"></i><div><div class="item-title">Global Team Leadership</div><div class="item-desc">Built and Scaled delivery CoEs (federated & non-federated) with 425+ FTE, Established governance, processes and workforce transformation.</div></div></div>
 </div>
+
 
 </div>
 
@@ -504,8 +376,8 @@ Create winning Go-to-market engines that drive Measurable Growth and Profitable 
 <div class="section-title">THOUGHT LEADERSHIP & RECOGNITION</div>
 <ul class="compact-list">
 <li><i class="fa-solid fa-pen-nib"></i><span><strong>Author & Co-Author</strong>: DevOps whitepapers, Testing Practitioner Handbook, CoE playbooks (APM, Governance, Multi-Vendor Operate)</span></li>
-<li><i class="fa-solid fa-certificate"></i><span><strong>Certified SME</strong>: Digital (SMACT), Digital Strategy & Transformation, Cloud</span></li>
-<li><i class="fa-solid fa-microphone"></i><span><strong>Speaker & Jury Member</strong>: National & International forums on AI, DevOps & Transformation</span></li>
+<li><i class="fa-solid fa-certificate"></i><span><strong>Certified SME</strong>: SMACT (Social, Mobile, Analytics, Cloud, and Internet of Things), Digital Strategy & Transformation, Cloud</span></li>
+<li><i class="fa-solid fa-microphone"></i><span><strong>Speaker & Jury Member</strong>: National & International forums on AI, DevOps & Transformation, Member Asia Cloud Computing Association</span></li>
 <li><i class="fa-solid fa-trophy"></i><span><strong>Recognized</strong>: Credit certificate for leading 9 days QA workshop in South Korea; Best Business Operator for Automation Framework</span></li>
 </ul>
 </div>
@@ -514,10 +386,10 @@ Create winning Go-to-market engines that drive Measurable Growth and Profitable 
 <div class="section-title">ENGAGE WITH ME</div>
 <div class="engage-icons">
 
-<!-- EMAIL FIX -->
 <a href="mailto:sharad.kumar.ms@gmail.com?subject=Connect with Sharad" class="engage-item">
     <i class="fa-solid fa-envelope"></i>
-    <span style="text-decoration: none; border-bottom: none;">E-mail</span></a>
+    <span>E-mail</span>
+</a>
 
 <a href="https://www.linkedin.com/in/sharad-kumar-11264247" target="_blank" class="engage-item">
     <i class="fa-brands fa-linkedin"></i>
